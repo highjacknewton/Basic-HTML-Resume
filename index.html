@@ -6,10 +6,10 @@
     <style>
         @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 @import url("https://fonts.googleapis.com/css?family=Oswald");
-
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: #000;
+    background-color: #05161a;
     color:aliceblue;
 }
 a {
@@ -19,6 +19,8 @@ a {
 }
 a:hover {
 font-size: larger;
+color:aqua;
+text-decoration: underline;
 }
 header {
     display: flex;
@@ -26,14 +28,17 @@ header {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: #fff 4px double;
-}
+    background: -webkit-linear-gradient(right, #072e33, #0c7075, #05969c,	#6da5c0);
+    border-bottom: #072e33 4px outset;
 
+}
 .namail {
     font-family: 'Ubuntu', sans-serif;
 }
 .name {
     font-size: 48px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
 }
 .e-mail {
     font-size: 16px;
@@ -41,54 +46,67 @@ header {
 }
 .e-mail:hover {
     font-size: 20px;
+    color:#05161a;
 }
 aside {
     float: right;
     width: 30%;
     margin-left: 15px;
+    margin-top: 4px;
     padding-left: 10px;
-    border-left: #fff 4px dotted;
+    padding-right: 10px;
+    border: #072e33 4px inset;
+    border-radius: 15px;
 }
 main {
     padding-left: 20px;
 }
 #pfp {
-    max-width: 148px;
+    max-width: 116px;
     height: auto;
 margin-right: 20px;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: aliceblue;
+}
+.font-change {
+    font-family: 'Oswald', sans-serif;
+    color: aliceblue;
 }
     </style>
     <title>Basic Resume</title>
 </head>
 <body>
     <header>
-   <div><img id="pfp" src="CartiWP.jpg"></div>
+   <div><img id="pfp" src="pfp.png" loading="lazy"></div>
         <div class="namail"><span class="name"> Daksh Mishra</span> <br> <a class="e-mail"href="mailto:thedakshmishra@gmail.com">thedakshmishra@gmail.com</a></div>
     </header>
     <aside>
         <div>
-<h2>Languages</h2><ul>
+<h2 class="font-change">Languages</h2><ul>
     <li>English</li>
     <li>Hindi</li>
 </ul></div>
-<div><h2>
+<div class="skills"><h2 class="font-change">
     Skills
 </h2>
 <ul>
     <li>Precise prompt construction and advanced knowledge of Ai tools.</li>
-<li>Proficient in LINUX.</li>
+<li>Proficient in LINUX based environments.</li>
 <li>Familiarity with design tools like Figma.</li>
-<li>Business Management</li>
+<li>Business Management.</li>
 </ul>
+<h1>Connect with me!</h1>
 </div>
     </aside>
     <main>
         <summary><h1>
             Overview
         </h1>
-A student and a part time Full-Stack Developer specialising in PostgreSQL, Expressjs, Reactjs, Nodejs. I also do front-end gigs using Tailwind CSS. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloribus provident unde quod dolor facilis exercitationem vel libero commodi repellat?</summary>
+A student and a part time Full-Stack Developer specialising in PostgreSQL, Expressjs, Reactjs, Nodejs. Excelling in  front-end gigs on TailwindCSS Framework. A composer of legible and syntax precise code.</summary><br>
         <div><h1>Work Experience</h1><ul>
-            <li><h2>Business Manager- SPM</h2>(2022-2023)</li>
+            <li><h2>Business Manager- <a href="https://www.facebook.com/spmportfolio/">SPM</a></h2>(2022-2023)</li>
         </ul>
         </div>
         <div><h1>Education</h1><ul>
@@ -96,10 +114,10 @@ A student and a part time Full-Stack Developer specialising in PostgreSQL, Expre
             <li><h2>High School- <a href="https://www.aryansinternationalschool.com">Aryans International School</a></h2>(2019-2020)</li>
         </ul></div>
 
-<h2>Programming Languages & Proficiency</h2><ul>
-<li>JavaScript(Backend & Frontend)</li>
-<li>Python(Backend)</li>
-<li>HTML,CSS</li>
+<h1>Programming Languages & Proficiency</h1><ul>
+<li>JavaScript(Backend & Frontend).</li>
+<li>Python(Backend).</li>
+<li>HTML,CSS.</li>
 </ul>
     </main>
 </body>
